@@ -28,7 +28,7 @@ public class DataGenerator {
         cityList.add("Алексин");
         cityList.add("Калуга");
         cityList.add("Ступино");
-        cityList.add("Воскресенск");
+        cityList.add("Дубна");
         Collections.shuffle(cityList);
         String city = cityList.get(10);
         return city;
