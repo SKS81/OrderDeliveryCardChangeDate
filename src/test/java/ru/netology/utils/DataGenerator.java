@@ -1,4 +1,4 @@
-package utils;
+package ru.netology.utils;
 
 import com.github.javafaker.Faker;
 import java.time.LocalDate;
