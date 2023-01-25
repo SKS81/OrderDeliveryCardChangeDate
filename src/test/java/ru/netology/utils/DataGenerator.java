@@ -6,31 +6,34 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class DataGenerator {
-    private DataGenerator() {
-    }
+    private DataGenerator() {}
 
     public static String generateCity() {
-        ArrayList<String> cityList = new ArrayList<>();
-        cityList.add("Москва");
-        cityList.add("Щелково");
-        cityList.add("Подольск");
-        cityList.add("Климовск");
-        cityList.add("Обнинск");
-        cityList.add("Чехов");
-        cityList.add("Малоярославец");
-        cityList.add("Домодедово");
-        cityList.add("Серпухов");
-        cityList.add("Пущино");
-        cityList.add("Протвино");
-        cityList.add("Кашира");
-        cityList.add("Таруса");
-        cityList.add("Тула");
-        cityList.add("Алексин");
-        cityList.add("Калуга");
-        cityList.add("Ступино");
-        cityList.add("Воскресенск");
-        Collections.shuffle(cityList);
-        String city = cityList.get(10);
+        List<String> sitylist = Arrays.asList(
+                "Москва",
+                "Санкт-Петербург",
+                "Калуга",
+                "Великий Новгород",
+                "Казань",
+                "Салехард",
+                "Владивосток",
+                "Астрахань",
+                "Калининград",
+                "Рязань",
+                "Самара",
+                "Краснодар",
+                "Саратов",
+                "Архангельск",
+                "Хабаровск",
+                "Вологда",
+                "Владикавказ",
+                "Владимир",
+                "Барнаул",
+                "Махачкала",
+                "Саранск"
+        );
+        Random rand = new Random();
+        String city = sitylist.get(rand.nextInt(sitylist.size()));
         return city;
     }
 
